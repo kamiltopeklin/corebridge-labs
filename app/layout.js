@@ -27,6 +27,7 @@ const organizationData = {
       name: "Corebridge Labs",
       url: "https://www.corebridgelabs.org/",
       logo: "https://www.corebridgelabs.org/icon.png",
+      sameAs: ["https://www.linkedin.com/company/corebridge-labs/"],
       description:
         "A remote-first software engineering studio building AI, blockchain, backend and full-stack solutions.",
     },

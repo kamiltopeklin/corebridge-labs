@@ -384,6 +384,9 @@ export default function HomePage() {
         <div className="container footerInner">
           <Logo />
           <span>© 2026 Corebridge Labs. All rights reserved.</span>
+          <a href="https://www.linkedin.com/company/corebridge-labs/">
+            LinkedIn
+          </a>
         </div>
       </footer>
     </main>
