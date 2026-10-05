@@ -4,7 +4,7 @@ export const metadata = {
   description:
     "Production-ready AI, blockchain, backend, full-stack and cloud engineering.",
   icons: {
-    icon: "/icon.svg",
+    icon: { url: "/icon.png", type: "image/png", sizes: "300x300" },
   },
 };
 export default function RootLayout({ children }) {
