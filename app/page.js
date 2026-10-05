@@ -26,6 +26,10 @@ import {
 import Logo from "../components/Logo";
 import ContactForm from "../components/ContactForm";
 
+export const metadata = {
+  alternates: { canonical: "https://www.corebridgelabs.org/" },
+};
+
 const projects = [
   {
     title: "AI Knowledge Platform",
@@ -52,19 +56,22 @@ const projects = [
 const services = [
   {
     title: "Full-Stack Development",
-    description: "Modern, responsive web applications and SaaS platforms from idea to production.",
+    description:
+      "Modern, responsive web applications and SaaS platforms from idea to production.",
     tags: ["React", "Next.js", "TypeScript"],
     Icon: Monitor,
   },
   {
     title: "Backend Engineering",
-    description: "Scalable APIs, microservices and distributed systems built for growth.",
+    description:
+      "Scalable APIs, microservices and distributed systems built for growth.",
     tags: ["Python", "Java", "Go", "Node.js"],
     Icon: Server,
   },
   {
     title: "Blockchain & Web3",
-    description: "Decentralized applications, smart contracts and on-chain integrations.",
+    description:
+      "Decentralized applications, smart contracts and on-chain integrations.",
     tags: ["Solana", "Ethereum", "Rust"],
     Icon: Blocks,
   },
@@ -76,7 +83,8 @@ const services = [
   },
   {
     title: "Cloud & Infrastructure",
-    description: "Scalable and secure cloud infrastructure across AWS, Azure and GCP.",
+    description:
+      "Scalable and secure cloud infrastructure across AWS, Azure and GCP.",
     tags: ["AWS", "Azure", "GCP"],
     Icon: Cloud,
   },
@@ -94,7 +102,8 @@ const services = [
   },
   {
     title: "API & Systems Integration",
-    description: "Third-party integrations, payment systems and event-driven architectures.",
+    description:
+      "Third-party integrations, payment systems and event-driven architectures.",
     tags: ["REST", "GraphQL", "APIs"],
     Icon: Cable,
   },
@@ -125,7 +134,10 @@ export default function HomePage() {
       <header className="siteHeader">
         <div className="contactStrip">
           <div className="container contactStripInner">
-            <a className="contactStripItem contactEmail" href="mailto:admin@corebridgelabs.org">
+            <a
+              className="contactStripItem contactEmail"
+              href="mailto:admin@corebridgelabs.org"
+            >
               <Mail size={21} aria-hidden="true" />
               <span>admin@corebridgelabs.org</span>
             </a>
@@ -173,7 +185,8 @@ export default function HomePage() {
               <span>forward.</span>
             </h1>
             <p className="heroText">
-              We design and build production-ready AI, blockchain, backend and
+              Corebridge Labs is a remote-first software engineering studio. We
+              design and build production-ready AI, blockchain, backend and
               full-stack solutions for startups and growing companies.
             </p>
             <div className="heroActions">
@@ -211,7 +224,8 @@ export default function HomePage() {
               <p className="eyebrow">WHAT WE DO</p>
               <h2>Our Services</h2>
               <p className="servicesIntro">
-                End-to-end engineering services to help you build, scale, and innovate.
+                End-to-end engineering services to help you build, scale, and
+                innovate.
               </p>
             </div>
             <a className="primaryButton" href="#contact">
@@ -229,7 +243,9 @@ export default function HomePage() {
                 </div>
                 <p>{description}</p>
                 <div className="serviceTags">
-                  {tags.map((tag) => <span key={tag}>{tag}</span>)}
+                  {tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
                 </div>
               </article>
             ))}
